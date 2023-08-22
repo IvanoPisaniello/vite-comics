@@ -147,6 +147,10 @@ export default {
         text-decoration: none;
         font-size: .8rem;
         color: $color-list;
+
+        &:hover {
+            color: white;
+        }
     }
 
 
