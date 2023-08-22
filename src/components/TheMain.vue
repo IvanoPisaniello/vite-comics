@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="main-container py-4">
+    <div class="main-container py-5">
         <div class="container">
             <h4 class="text-light "> -- Content goes here -- </h4>
         </div>
@@ -21,7 +21,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 .main-container {
-    height: 100px;
+    height: 120px;
     background-color: $color-tertiary;
 
 }

@@ -21,6 +21,9 @@ export default {
     <TheMain></TheMain>
     <CardContainer></CardContainer>
   </main>
+  <footer>
+    <TheFooter></TheFooter>
+  </footer>
 </template>
 
 <style></style>

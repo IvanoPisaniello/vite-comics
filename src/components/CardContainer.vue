@@ -37,6 +37,8 @@ export default {
 .card-container {
     height: 150px;
     background-color: $color-primary;
+    position: relative;
+    z-index: 1;
 
     img {
         height: 50px;
