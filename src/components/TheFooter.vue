@@ -98,7 +98,31 @@ export default {
         </div>
     </div>
 
-    <div class="footer-nav"></div>
+    <div class="footer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 py-4">
+                    <button class="btn btn btn-outline-primary rounded-0 text-white">SIGN-UP NOW!</button>
+                </div>
+                <div class="col-6">
+                    <div class="row py-4">
+                        <div class="col-6 d-flex justify-content-end py-3">
+                            <h5>FOLLOW US</h5>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end py-2 justify-content-around">
+                            <a href="#"><img src="../assets/footer-facebook.png" alt=""></a>
+                            <a href="#"><img src="../assets/footer-twitter.png" alt=""></a>
+                            <a href="#"><img src="../assets/footer-youtube.png" alt=""></a>
+                            <a href="#"><img src="../assets/footer-pinterest.png" alt=""></a>
+                            <a href="#"><img src="../assets/footer-periscope.png" alt=""></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -134,5 +158,9 @@ export default {
     background-color: $color-secondary;
     position: relative;
     z-index: 2;
+
+    h5 {
+        color: $color-primary;
+    }
 }
 </style>
