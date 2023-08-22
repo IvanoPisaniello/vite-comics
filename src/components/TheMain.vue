@@ -11,6 +11,9 @@ export default {
         <div class="container">
             <h4 class="text-light "> -- Content goes here -- </h4>
         </div>
+        <div class="card-container">
+
+        </div>
     </div>
 </template>
 
@@ -20,5 +23,6 @@ export default {
 .main-container {
     height: 100px;
     background-color: $color-tertiary;
+
 }
 </style>
