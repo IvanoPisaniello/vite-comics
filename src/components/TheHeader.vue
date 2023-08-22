@@ -6,15 +6,15 @@ export default {
     data() {
         return {
             navLinks: [
-                { name: "Caracters", path: "/" },
-                { name: "Comics", path: "/products" },
-                { name: "Movies", path: "/contacts" },
-                { name: "Games", path: "/about" },
-                { name: "Collectibles", path: "/about" },
-                { name: "Videos", path: "/about" },
-                { name: "Fans", path: "/about" },
-                { name: "News", path: "/about" },
-                { name: "Shop", path: "/about" },
+                { name: "CARACTERS", path: "/" },
+                { name: "COMICS", path: "/products" },
+                { name: "MOVIES", path: "/contacts" },
+                { name: "GAMES", path: "/about" },
+                { name: "COLLECTIBLES", path: "/about" },
+                { name: "VIDEOS", path: "/about" },
+                { name: "FANS", path: "/about" },
+                { name: "NEWS", path: "/about" },
+                { name: "SHOP", path: "/about" },
 
             ],
         };
@@ -28,7 +28,7 @@ export default {
 
         <ul class="nav nav-underline">
 
-            <li class="nav-item" v-for="link in navLinks">
+            <li class="nav-item " v-for="link in navLinks">
                 <a class="nav-link pb-4" href="#">{{ link.name }}</a>
             </li>
 
@@ -49,6 +49,7 @@ export default {
 
     .nav-link {
         color: black;
+        font-size: .8rem;
 
         &:hover {
             color: $color-primary;
