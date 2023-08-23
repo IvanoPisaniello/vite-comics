@@ -1,13 +1,13 @@
 <script>
 export default {
     components: {
-        name: 'CardContainer',
+        name: 'MenuContainer',
     }
 }
 </script>
 
 <template>
-    <div class="card-container">
+    <div class="Menu-container">
         <div class="container d-flex justify-content-around align-items-center py-5">
 
             <div class="d-flex ">
@@ -41,7 +41,7 @@ export default {
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
 
-.card-container {
+.Menu-container {
     height: 150px;
     background-color: $color-primary;
     position: relative;
