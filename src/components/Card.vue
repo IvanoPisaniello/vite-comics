@@ -21,7 +21,7 @@ export default {
 <template>
     <div class="single-card text-start">
         <div class="img-container">
-            <img class="card-img-top img-card" :src="thumb" alt="Title">
+            <a href="#"><img class="card-img-top img-card" :src="thumb" alt="Title"></a>
         </div>
         <div class="">
             <p class="text-light text-center">{{ series }}</p>
