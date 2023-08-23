@@ -40,11 +40,12 @@ export default {
 @use "../styles/partials/variables" as *;
 
 .navbar {
-    height: 120px;
+    height: 62px;
+    width: 900px;
 
 
     .logo-image {
-        height: 80px;
+        height: 50px;
     }
 
     .nav-link {
