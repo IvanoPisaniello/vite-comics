@@ -40,6 +40,12 @@ console.log(Cards)
   <main>
     <div class="jumbo-container">
       <Hero></Hero>
+
+    </div>
+    <div class="d-flex justify-content-center pb-3 hero-btn">
+      <button class="btn btn-primary px-4 rounded-0">
+        CURRENT SERIES
+      </button>
     </div>
     <div class="d-flex flex-wrap gap-4 container card-container p-3">
 
@@ -47,7 +53,7 @@ console.log(Cards)
 
     </div>
     <div class="d-flex justify-content-center pb-3">
-      <button class="btn btn-primary px-5 rounded-0">
+      <button class="btn btn-primary px-4 py-0 rounded-0">
         LOAD MORE
       </button>
     </div>
@@ -67,15 +73,19 @@ body {
 
 main {
   background-color: $color-secondary;
+  position: relative;
 
   .jumbo-container {
     height: 300px;
     overflow: hidden;
+    position: relative;
   }
 
   p {
     font-size: .7rem;
   }
+
+
 }
 
 .card-container {
@@ -88,6 +98,16 @@ main {
 
 
   }
+
+
+
+}
+
+.hero-btn {
+  position: absolute;
+  left: 23%;
+  top: 29%;
+
 
 }
 </style>
