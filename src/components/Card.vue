@@ -7,6 +7,7 @@ export default {
     props: {
         thumb: String,
         price: String,
+        series: String,
 
     }
 
@@ -18,11 +19,12 @@ export default {
 </script>
 
 <template>
-    <div class="card text-start">
-        <img class="card-img-top" :src="thumb" alt="Title">
-        <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Body</p>
+    <div class="single-card text-start">
+        <div class="img-container">
+            <img class="card-img-top img-card" :src="thumb" alt="Title">
+        </div>
+        <div class="">
+            <p class="text-light text-center">{{ series }}</p>
         </div>
     </div>
 </template>
@@ -30,14 +32,20 @@ export default {
 <style scoped lang="scss">
 @use "../styles/partials/variables" as *;
 
-.main-container {
-    height: 500px;
-    background-color: $color-tertiary;
 
-    .card {
-        width: 100px;
-        height: 150px;
-    }
 
+
+
+.img-card {
+    height: 120px;
+}
+
+// .img-container {
+//     height: 120px;
+//     overflow: hidden;
+// }
+
+p {
+    font-size: .8rem;
 }
 </style>

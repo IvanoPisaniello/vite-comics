@@ -4,6 +4,7 @@ import TheFooter from './components/TheFooter.vue'
 import Card from './components/Card.vue'
 import MenuContainer from './components/MenuContainer.vue'
 import Cards from '../src/mydatabase/cards'
+import Hero from '../src/components/hero.vue'
 export default {
   components: {
     TheHeader,
@@ -11,6 +12,7 @@ export default {
     Card,
     MenuContainer,
     Cards,
+    Hero,
 
 
 
@@ -36,8 +38,18 @@ console.log(Cards)
     <TheHeader></TheHeader>
   </header>
   <main>
-    <div class="d-flex flex-wrap gap-4 container card-container">
-      <Card :img-src="card.thumb" v-for="(card, i) in Cards" class="single-card"></Card>
+    <div class="jumbo-container">
+      <Hero></Hero>
+    </div>
+    <div class="d-flex flex-wrap gap-4 container card-container p-3">
+
+      <Card :thumb="card.thumb" :series="card.series" v-for="(card, i) in Cards" class="single-card"></Card>
+
+    </div>
+    <div class="d-flex justify-content-center pb-3">
+      <button class="btn btn-primary px-5 rounded-0">
+        LOAD MORE
+      </button>
     </div>
     <MenuContainer></MenuContainer>
   </main>
@@ -55,6 +67,15 @@ body {
 
 main {
   background-color: $color-secondary;
+
+  .jumbo-container {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  p {
+    font-size: .7rem;
+  }
 }
 
 .card-container {
@@ -64,6 +85,8 @@ main {
 
   .single-card {
     width: 100px;
+
+
   }
 
 }
