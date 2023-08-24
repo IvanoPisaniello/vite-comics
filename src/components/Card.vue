@@ -38,12 +38,13 @@ export default {
 
 .img-card {
     height: 120px;
+
+
+
+
 }
 
-// .img-container {
-//     height: 120px;
-//     overflow: hidden;
-// }
+
 
 p {
     font-size: .8rem;

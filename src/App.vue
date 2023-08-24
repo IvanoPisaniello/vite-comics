@@ -49,7 +49,8 @@ console.log(Cards)
     </div>
     <div class="d-flex flex-wrap gap-4 container card-container p-3">
 
-      <Card :thumb="card.thumb" :series="card.series" v-for="(card, i) in Cards" class="single-card"></Card>
+      <Card :thumb="card.thumb" :series="card.series" v-for="(card, i) in Cards" class="single-card" :key="singleCard">
+      </Card>
 
     </div>
     <div class="d-flex justify-content-center pb-3">
