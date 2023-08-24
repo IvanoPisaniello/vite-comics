@@ -4,7 +4,7 @@ import TheFooter from './components/TheFooter.vue'
 import Card from './components/Card.vue'
 import MenuContainer from './components/MenuContainer.vue'
 import Cards from '../src/mydatabase/cards'
-import Hero from '../src/components/hero.vue'
+import Hero from '../src/components/Hero.vue'
 export default {
   components: {
     TheHeader,
