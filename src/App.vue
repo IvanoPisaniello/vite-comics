@@ -3,7 +3,7 @@ import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
 import Card from './components/Card.vue'
 import MenuContainer from './components/MenuContainer.vue'
-import Cards from '../src/mydatabase/Cards'
+import cards from '../src/mydatabase/cards'
 import Hero from '../src/components/Hero.vue'
 export default {
   components: {
@@ -11,7 +11,7 @@ export default {
     TheFooter,
     Card,
     MenuContainer,
-    Cards,
+    cards,
     Hero,
 
 
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      Cards
+      cards
     }
   }
 
@@ -30,7 +30,7 @@ export default {
 
 }
 
-console.log(Cards)
+console.log(cards)
 </script>
 
 <template>
