@@ -3,7 +3,7 @@ import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
 import Card from './components/Card.vue'
 import MenuContainer from './components/MenuContainer.vue'
-import cards from '../src/mydatabase/cards'
+import cards from './mydatabase/cards'
 import Hero from '../src/components/Hero.vue'
 export default {
   components: {
@@ -49,7 +49,7 @@ console.log(cards)
     </div>
     <div class="d-flex flex-wrap gap-4 container card-container p-3">
 
-      <Card :thumb="card.thumb" :series="card.series" v-for="(card, i) in Cards" class="single-card" :key="singleCard">
+      <Card :thumb="card.thumb" :series="card.series" v-for="(card, i) in cards" class="single-card" :key="singleCard">
       </Card>
 
     </div>
